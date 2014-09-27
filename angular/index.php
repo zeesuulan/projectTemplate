@@ -12,9 +12,10 @@
 	<ng-view></ng-view>
 	
 </body>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/bootstrap.min.js"></script>
-<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/lib.js"></script>
+<script src="js/controller/c.js"></script>
+<script src="js/diretcive/d.js"></script>
+<script src="js/service/s.js"></script>
 <script>
 	$(function() {
 	    angular.bootstrap(document, ['CS'])
