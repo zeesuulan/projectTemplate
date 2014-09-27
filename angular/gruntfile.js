@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       scripts: {
-        files: ['*.html', 'template/*.html', 'js/**/*.js', 'css/*.css', 'less/*.less'],
+        files: ['*.php', '*.html', 'template/*.html', 'js/**/*.js', 'css/*.css', 'less/*.less'],
         tasks: ['less:all','concat:all', 'uglify'],
         options: {
           spawn: false,
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     concat: {
       all: {
         files: [{
-          src: ['js/lib/jquery.js', 'js/lib/jquery.cookie.js', 'js/lib/angular.js', 'js/lib/angular-route.js', 'js/lib/app.js', 'js/lib/bootstrap.min.js', 'js/lib/messenger.js', 'js/lib/messenger-theme.js'],
+          src: ['js/lib/jquery.min.js', 'js/lib/angular.min.js', 'js/lib/angular-route.min.js', 'js/lib/app.js', 'js/lib/bootstrap.min.js'],
           dest: 'js/lib/lib.js'
         }, {
           src: ['js/controller/*', '!js/controller/c.js'],
